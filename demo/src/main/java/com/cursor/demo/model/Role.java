@@ -2,9 +2,8 @@ package com.cursor.demo.model;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public enum Role {
   USER("user:read"),
@@ -13,8 +12,8 @@ public enum Role {
   Role(String s) {
   }
 
-  public List<SimpleGrantedAuthority> getAuthorities() {
-    List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+  public Set<SimpleGrantedAuthority> getAuthorities() {
+    Set<SimpleGrantedAuthority> authorities = new HashSet<>();
     authorities.add(new SimpleGrantedAuthority(Role.ADMIN.name()));
     authorities.add(new SimpleGrantedAuthority(Role.USER.name()));
     return authorities;

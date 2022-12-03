@@ -2,8 +2,12 @@ package com.cursor.demo.model;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import javax.persistence.*;
+import java.util.Collection;
+import java.util.Collections;
 
 @Entity
 @Data
@@ -23,5 +27,7 @@ public class UserEntity {
     private Role role;
     @Enumerated(value = EnumType.STRING)
     private Status status;
+
+
 
 }

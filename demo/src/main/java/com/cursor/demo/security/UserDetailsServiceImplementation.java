@@ -1,4 +1,4 @@
-package com.cursor.demo.service.securityService;
+package com.cursor.demo.security;
 
 import com.cursor.demo.model.UserEntity;
 import com.cursor.demo.model.securityModel.SecurityUser;
