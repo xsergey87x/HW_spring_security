@@ -23,13 +23,13 @@ import java.util.Date;
 @Component
 @RequiredArgsConstructor
 public class JwtProvider {
-    @Value("${Authorization}")
+    @Value("Authorization")
     private String authorizationHeader;
-    @Value("${there is no spoon; greed is good}")
+    @Value("there is no spoon; greed is good")
     private String secret;
-    @Value("${userId}")
+    @Value("userId")
     private String userId;
-    @Value("${900_000}")
+    @Value("900_000")
     private int validity;
     private Key key;
 
