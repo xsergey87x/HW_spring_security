@@ -2,7 +2,7 @@ package com.cursor.demo.model.securityModel;
 
 import com.cursor.demo.model.Role;
 import com.cursor.demo.model.Status;
-import com.cursor.demo.model.UserEntity;
+import com.cursor.demo.model.entity.UserEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,7 +10,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class SecurityUser implements UserDetails {

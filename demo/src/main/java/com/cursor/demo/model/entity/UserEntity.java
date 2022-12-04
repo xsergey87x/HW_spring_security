@@ -1,17 +1,16 @@
-package com.cursor.demo.model;
+package com.cursor.demo.model.entity;
 
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import com.cursor.demo.model.Role;
+import com.cursor.demo.model.Status;
+import lombok.*;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.Collections;
 
 @Entity
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Table(name = "users")
 public class UserEntity {
 

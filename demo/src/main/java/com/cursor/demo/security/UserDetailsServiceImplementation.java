@@ -1,6 +1,6 @@
 package com.cursor.demo.security;
 
-import com.cursor.demo.model.UserEntity;
+import com.cursor.demo.model.entity.UserEntity;
 import com.cursor.demo.model.securityModel.SecurityUser;
 import com.cursor.demo.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
