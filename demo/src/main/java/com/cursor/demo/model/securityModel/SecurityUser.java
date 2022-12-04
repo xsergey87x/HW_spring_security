@@ -64,7 +64,7 @@ public class SecurityUser implements UserDetails {
         return isActive;
     }
 
-    public static UserDetails fromUser(UserEntity user) {
+    public static UserDetails getUserDetailsFromUser(UserEntity user) {
 
         SimpleGrantedAuthority authority = new SimpleGrantedAuthority(user.getRole().name());
 
