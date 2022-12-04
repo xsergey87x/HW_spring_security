@@ -19,7 +19,7 @@ public class UserServiceImplementation implements UserService{
         UserEntity user = ObjectMapper.mapFromDtoToEntity(userDto);
         String encodedPassword = new BCryptPasswordEncoder(12).encode(user.getPassword());
         user.setPassword(encodedPassword);
-        UserEntity savedUser = userRepository.saveAndFlush(user);
+        UserEntity savedUser = userRepository.save(user);
         return savedUser.getId();
     }
 
