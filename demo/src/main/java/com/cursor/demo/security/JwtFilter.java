@@ -1,5 +1,6 @@
 package com.cursor.demo.security;
 
+import com.cursor.demo.exception.JwtAuthenticationException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
